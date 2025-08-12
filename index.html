@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer | Python Enthusiast</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with experience in Flask, Python, and front-end technologies.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1 - Flask Blog</li>
+            <li>Project 2 - Weather App</li>
+            <li>Project 3 - Task Tracker</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your name" required><br>
+            <input type="email" name="email" placeholder="Your email" required><br>
+            <textarea name="message" placeholder="Your message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
